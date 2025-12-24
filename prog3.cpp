@@ -1,15 +1,13 @@
 #include <iostream>
+#include <vector>
+#include <string>
 
 int main() {
-    int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    std::vector<std::string> names = {
+        "Andi", "Budi", "citra"
+    };
 
-    for (int number : numbers) {
-        if (number == 6) {
-            std::cout << "Number int 5 : " << number << std::endl;
-            
-            break;
-        }
+    for (const auto& n : names) {
+        std::cout << n << std::endl;
     }
-
-    return 0;
 }

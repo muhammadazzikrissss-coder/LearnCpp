@@ -1,11 +1,15 @@
 #include <iostream>
 
-int add(int a, int b) {
-    return a + b;
-}
-
 int main() {
-    std::cout << "The sum is : " << add(9, 1) << std::endl;
+    char names[5][20] = {
+        "Andi",
+        "Joko",
+        "Budi",
+        "Citra",
+        "Yanti"
+    };
+
+    std::cout << "Nama dengan nomor urut absen 3 : " << names[2] << std::endl;
 
     return 0;
 }
